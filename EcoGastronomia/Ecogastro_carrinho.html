@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGastronomia - Carinho</title>
+    <link rel="icon" href="Imagens/eg-logo.png" type="image/x-icon" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="Css/Ecogastro_carrinho_style.css">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <!--Div para logo-->
+        <div id="div_logo">
+            <!--Logo-->
+            <a href="Ecogastro.html"><img src="Imagens/ecogastro.png"></a>
+        </div>
+        <nav>
+            <ul id="ul_nav">
+                <a href="Ecogastro_receitas.html">
+                    <li>Receitas</li>
+                </a>
+                <a href="Ecogastro_sobre_nos.html">
+                    <li>Sobre Nós</li>
+                </a>
+                <a href="Ecogastro_loja.html">
+                    <li>Loja</li>
+                </a>
+                <a href="Ecogastro_perfil.php">
+                    <li>Perfil</li>
+                </a>
+                <!--Div para o icon e a input-->
+                               <div id="div_pesquisa">
+                    <form method="post" action="Ecogastro_resultado.php" id="form_pesquisa">
+                        <!--Input para pesquisar-->
+                        <input id="input_pesquisa" name="pesquisa">
+                    </form>
+                    <!--Coloca o ícone de pesquisa-->
+                    <span class="material-symbols-outlined" id="icon_pesquisa" onclick="pesquisar()">search</span>
+                    <a href="Ecogastro_carrinho.html"><span class="material-symbols-outlined"
+                            id="icon_carrinho">shopping_cart</span></a>
+                    <script>
+                        function pesquisar() {
+                            form = document.getElementById("form_pesquisa");
+                            form.submit();
+                        }
+                    </script>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Section onde vai estar escrito em qual etapa está o processo-->
+        <section class="section_etapas" style="margin-top: 80px;">
+            <div class="div_etapas">
+                <div class="etapa_carinho">
+                    <img src="Imagens/Numero1.png">
+                    <h4>Carrinho</h4>
+                </div>
+                <div class="etapa_carinho2">
+                    <img src="Imagens/Numero2.png">
+                    <h4>Pagamento</h4>
+                </div>
+            </div>
+        </section>
+        <!--Section onde está separando as informações-->
+        <section class="section_escritas">
+            <div class="div_escritas">
+                <div class="div_texto_produtos">
+                    <h5 id="texto_produtos">Produtos</h5>
+                </div>
+                <h5>Quantidade</h5>
+                <h5>Valor Unitário</h5>
+                <h5>Valor Total</h5>
+            </div>
+        </section>
+        <!--Section das informações do produto-->
+        <section class="section_informacoes_produto">
+            <div class="div_informacoes_produto">
+                <!--Div onde está a imagem e a descrição do produto-->
+                <div class="div_informacoes_produto2_1">
+                    <!--Imagem do prtoduto-->
+                    <img src="Imagens/colher-pau-218_1_g.jpg">
+                    <!--Div da descrição do produto-->
+                    <div id="div_descricao_produto">
+                        <p>Colher de pau Tramontina Edição Especial</p>
+                        <br>
+                        <p><b>Cor:</b> Marrom Amarelado</p>
+                        <br>
+                        <p><b>Tamanho:</b> Média</p>
+                    </div>
+                </div>
+                <!--Div da quantidade de produtos-->
+                <div class="div_quantidade">
+                    <button type="button" class="buttons_quantidade" onclick="subtrair()">-</button>
+                    <div id="div_texto_quantidade">
+                        <p id="quantidade">1</p>
+                    </div>
+                    <button type="button" class="buttons_quantidade button_adicionar" onclick="somar()">+</button>
+                </div>
+                <div class="div_valor_uni">
+                    <h3 id="valor_uni">R$ 299,99</h3>
+                </div>
+                <div class="div_valor_tot">
+                    <h3 id="valor_total">R$ 299,99</h3>
+                    <span class="material-symbols-outlined" id="icon_delete">delete</span>
+                </div>
+            </div>
+            <script>
+                function somar() {
+                    var quantidade = document.getElementById("quantidade").innerHTML;
+                    console.log(quantidade);
+                    quantidade = parseInt(quantidade) + 1;
+
+                    var valor_total = document.getElementById("valor_total").innerHTML.toString().replace(",", ".");
+                    var valor_uni = document.getElementById("valor_uni").innerHTML.toString().replace(",", ".");
+                    valor_total = valor_total.toString().replace(" ", "");
+                    valor_total = valor_total.toString().replace("R", "");
+                    valor_total = valor_total.toString().replace("$", "");
+                    valor_uni = valor_uni.toString().replace(" ", "");
+                    valor_uni = valor_uni.toString().replace("R", "");
+                    valor_uni = valor_uni.toString().replace("$", "");
+                    valor_total = parseFloat(valor_total) + parseFloat(valor_uni);
+                    if (quantidade == 100) {
+
+                    } else {
+                        document.getElementById("quantidade").innerHTML = quantidade;
+                        valor_total2= valor_total.toFixed(2);
+                        document.getElementById("valor_total").innerHTML = "R$ " + valor_total2;
+                    }
+
+                    
+                }
+                function subtrair() {
+                    var valor_total = document.getElementById("valor");
+                    var quantidade = document.getElementById("quantidade").innerHTML;
+                    console.log(quantidade);
+                    quantidade = parseInt(quantidade) - 1;
+
+                    var valor_total = document.getElementById("valor_total").innerHTML.toString().replace(",", ".");
+                    var valor_uni = document.getElementById("valor_uni").innerHTML.toString().replace(",", ".");
+                    valor_total = valor_total.toString().replace(" ", "");
+                    valor_total = valor_total.toString().replace("R", "");
+                    valor_total = valor_total.toString().replace("$", "");
+                    valor_uni = valor_uni.toString().replace(" ", "");
+                    valor_uni = valor_uni.toString().replace("R", "");
+                    valor_uni = valor_uni.toString().replace("$", "");
+                    valor_total = parseFloat(valor_total) - parseFloat(valor_uni);
+                    if (quantidade == 0) {
+
+                    } else {
+                        document.getElementById("quantidade").innerHTML = quantidade;
+                        valor_total2= valor_total.toFixed(2);
+                        document.getElementById("valor_total").innerHTML = "R$ " + valor_total2;
+                    }
+
+                }
+
+            </script>
+        </section>
+        <section class="section_botao_comprar">
+            <a href="Ecogastro_pagamento.html"><button type="button" id="botao_comprar">COMPRAR</button></a>
+        </section>
+    </main>
+    <!--Rodapé-->
+    <footer>
+        <!--Div onde está as informações gerais-->
+        <div id="div_footer_esq">
+            <ul>
+                <li>Receitas</li>
+                <li>Sobre Nós</li>
+                <li>Loja</li>
+                <li>Perfil</li>
+            </ul>
+        </div>
+        <!--Div onde está a logo-->
+        <div id="div_footer_meio">
+            <img src="Imagens/eg-logo.png">
+        </div>
+        <!--Div onde está as redes sociais-->
+        <div id="div_footer_dir">
+            <img src="Imagens/instagram.png">
+            <img src="Imagens/twitter.png">
+            <img src="Imagens/facebook.png">
+        </div>
+    </footer>
+    <div id="direitos_autorais">
+        <h3>© 2023 Todos os direitos reservados à Yan Ambrósio, Pedro Henrique, Luiz Gustavo.</h3>
+    </div>
+</body>
+
+</html>

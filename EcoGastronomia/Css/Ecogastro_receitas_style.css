@@ -1,0 +1,296 @@
+/*Zera todas as medidas do body*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Zera as medidas do form*/
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Dá cor de fundo para o body*/
+body {
+    background-color: rgb(237, 234, 231);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Formata o cabeçalho*/
+header {
+    background-color: #8CA19A;
+    width: 100%;
+    height: 150px;
+
+}
+
+/*Formata a div responsável pela logo*/
+#div_logo {
+    height: 100%;
+    width: 20%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+/*Formata a logo*/
+#div_logo img {
+    width: 70%;
+    margin-left: 5%;
+}
+
+/*Formata a "div" responsável pelo menu de navegação*/
+nav {
+    width: 80%;
+    float: right;
+    height: 100%;
+    align-items: center;
+}
+
+/*Formata a ul do menu de navegação*/
+#ul_nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/*Formata os textos do menu de navegação*/
+#ul_nav li {
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+    list-style-type: none;
+    display: inline-block;
+    text-align: justify;
+    padding-top: 12px;
+
+}
+
+#div_pesquisa {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+#div_pesquisa input {
+    height: 28px;
+    border-radius: 3px;
+    margin-right: 1%;
+    width: 200px;
+
+}
+
+/*Coloca o símbolo do perfil*/
+.material-symbols-outlined {
+    color: white;
+    cursor: pointer;
+
+}
+
+/*Formata o icon do carrinho*/
+#icon_carrinho {
+    margin-left: 15px;
+}
+
+/*Formata o menu de navegação quando o mouse passar por cima*/
+#ul_nav li:hover {
+    text-decoration: underline;
+}
+
+.div_nav2 {
+    width: 100%;
+    height: 80px;
+    background-color: #c2cfcb;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div_nav2 li {
+    list-style-type: none;
+    color: black;
+}
+
+.div_nav2 ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subtopicos {
+    text-decoration: none;
+    color: black;
+}
+
+.div_nav2 li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Formata o conteúdo do site*/
+main {
+    width: 100%;
+}
+
+/*Section para a linha de mudança de temas*/
+.section_texto {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/*Formata a section onde está separando as seções*/
+.section_texto h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Section para colocar os produtos*/
+.section_melhores_avalidas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Formata a div onde está os produtos e as descrições*/
+#div_imagens_produtos,
+#div_imagens_produtos2 {
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Formta a div onde está somente os produtos*/
+.div_produtos {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*Formata as div dentro da div_produto*/
+.div_produtos div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Formata a div onde está as imagens dos produtos*/
+.div_imagem {
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/*Formata o nome do produto*/
+.div_descricao_imagens {
+    border: #000 1px solid;
+    border-radius: 0px 0px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Formata o nome do produto*/
+.div_descricao_imagens h1 {
+    font-weight: normal;
+}
+
+/*Dá um tamanho as imagens dos produtos*/
+.imagens_produto {
+    width: 100%;
+}
+
+/*Formata a div da área para anúncios*/
+.area_anuncio {
+    display: flex;
+    margin-top: 200px;
+    width: 55%;
+    justify-content: center;
+}
+
+/*Formata a imagem que se encontra dentro da área para anúncios*/
+.area_anuncio img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+/*Formata o rodapé*/
+footer {
+    margin-top: 200px;
+    height: 450px;
+    background-color: #4d504f;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Formata as div dentro do rodapé*/
+footer div {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Formata a div do meio no footer*/
+#div_footer_meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Formata a logo no rodapé*/
+#div_footer_meio img {
+    width: 120px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+/*Formata as imagens das redes sociais no rodapé*/
+#div_footer_dir img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+/*Formata a div que tá na direita no rodapé*/
+#div_footer_dir {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*Formata a div que tá na esquerda no rodapé*/
+#div_footer_esq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div_footer_esq li {
+    margin-top: 20px;
+    list-style-type: none;
+    color: white;
+}
+
+#direitos_autorais {
+    width: 100%;
+    text-align: center;
+    background-color: #4d504f;
+    color: #fff;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoGastronomia</title>
+    <link rel="icon" href="Imagens/eg-logo.png" type="image/x-icon" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="Css/Ecogastro_style.css">
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <!--Div para logo-->
+        <div id="div_logo">
+            <!--Logo-->
+            <a href="Ecogastro.html"><img src="Imagens/ecogastro.png"></a>
+        </div>
+        <nav>
+            <ul id="ul_nav">
+                <a href="Ecogastro_receitas.html">
+                    <li>Receitas</li>
+                </a>
+                <a href="Ecogastro_sobre_nos.html">
+                    <li>Sobre Nós</li>
+                </a>
+                <a href="Ecogastro_loja.html">
+                    <li>Loja</li>
+                </a>
+                <a href="Ecogastro_perfil.php">
+                    <li>Perfil</li>
+                </a>
+                <!--Div para o icon e a input-->
+                <div id="div_pesquisa">
+                    <form method="post" action="Ecogastro_resultado.php" id="form_pesquisa">
+                        <!--Input para pesquisar-->
+                        <input id="input_pesquisa" name="pesquisa">
+                    </form>
+                    <!--Coloca o ícone de pesquisa-->
+                    <span class="material-symbols-outlined" id="icon_pesquisa" onclick="pesquisar()">search</span>
+                   
+                    <script>
+                        function pesquisar() {
+                            form = document.getElementById("form_pesquisa");
+                            form.submit();
+                        }
+                    </script>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section_carousel">
+            <div class="container"><!--Div do carousel inteiro-->
+                <button class="arrow-left control" aria-label="next">❮</button><!--Seta da esquerda-->
+                <button class="arrow-right control" aria-label="previous">❯</button><!--Seta da direita-->
+                <div class="galerry-wrapper"><!--Div da barra de rolagem-->
+                    <div class="gallery"><!--Div das imagens-->
+                        <img src="Imagens/Ecogastro_anuncio1.png" class="item current-item" onclick="ingredientes()"
+                            style="cursor: pointer;">
+                        <img src="Imagens/Ecogastro_anuncio3.png" class="item" onclick="utensilios()"
+                            style="cursor: pointer;">
+                        <img src="Imagens/Ecogastro_anuncio2.png" class="item" onclick="instagram()"
+                            style="cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+            <script>
+                function utensilios() {
+                    location.href = "SubLoja/Ecogastro_utensilios.php";
+                }
+                function ingredientes() {
+                    location.href = "SubLoja/Ecogastro_ingredientes.php";
+                }
+                function instagram() {
+                    location.href = "https://www.instagram.com/bartolove262/";
+                }
+            </script>
+        </section>
+        <script>
+            const controls = document.querySelectorAll('.control');//Traz as duas arrows de uma vez
+            let currentItem = 0;//Vê quem é o current Item
+            const items = document.querySelectorAll('.item') //puxa os itens(pode ser items ali ó)
+            const maxItems = items.length; //Pega a quantidade de items
+            controls.forEach(control => {
+                control.addEventListener('click', () => { //Nessa linha adiciona um evento de click
+                    const isLeft = control.classList.contains('arrow-left');//Nessa linha ele diz: click esquerda = true
+                    if (isLeft) {
+                        currentItem -= 1;
+                    } else {
+                        currentItem += 1;
+                    }
+                    if (currentItem >= maxItems) {//If para ele fazer um carousel infinito e voltar para a primeira imagem
+                        currentItem = 0;
+                    }
+                    if (currentItem < 0) {//If para ele fazer um carousel infinito e voltar para a última imagem
+                        currentItem = maxItems - 1; //Coloca -1 por conta que começa no 0
+                    }
+                    items.forEach(item => item.classList.remove('current-item')); //Remove a opacidade
+
+                    items[currentItem].scrollIntoView({
+
+                        inline: "nearest",//tenta centralizar o elemneto quando clica na seta
+                        behavior: "smooth",//tenta centralizar de um jeito smooth
+                        block: "nearest",
+                    }, false);
+                    items[currentItem].classList.add("current-item");//Muda o current item
+                });
+            });
+        </script>
+        <section class="section_texto texto2" style="margin-top: 150px;">
+            <!--Texto de divisão e linha-->
+            <h1>Nossos produtos mais recentes!</h1>
+        </section>
+        <!--Section onde está as imagens dos produtos-->
+        <section class="section_produtos">
+            <div id="div_imagens_produtos">
+                <div class="div_produtos" onclick="window.location='Ecogastro_produto.php?id_produto=15'" style="cursor: pointer;">
+                    <div class="div_imagem">
+                        <img src="Imagens/avental.jpg" width="100%">
+                    </div>
+                    <div class="div_descricao_imagens">
+                        <h1>Avental em algodão reciclado</h1>
+                    </div>
+                </div>
+                <div class="div_produtos" onclick="window.location='Ecogastro_produto.php?id_produto=16'" style="cursor: pointer;">
+                    <div class="div_imagem">
+                        <img src="Imagens/agriao.avif" width="100%">
+                    </div>
+                    <div class="div_descricao_imagens">
+                        <h1>Maço de Agrião lavado</h1>
+                    </div>
+                </div>
+                <div class="div_produtos" onclick="window.location='Ecogastro_produto.php?id_produto=17'" style="cursor: pointer;">
+                    <div class="div_imagem">
+                        <img src="Imagens/liquidificador.avif" width="100%">
+                    </div>
+                    <div class="div_descricao_imagens">
+                        <h1>Liquidificador Mondial Power</h1>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section_texto" style="margin-top: 200px;">
+            <!--Texto de divisão e linha-->
+            <h1>Nossos receitas mais vistas!</h1>
+        </section>
+        <!--Section onde está as imagens das receitas-->
+        <section class="section_produtos">
+            <div id="div_imagens_produtos">
+                <div class="div_produtos" onclick="window.location='Ecogastro_prato.php?id=6'" style="cursor: pointer;">
+                    <div class="div_imagem">
+                        <img src="Imagens/canoa_abobrinha.jpg" width="100%">
+                    </div>
+                    <div class="div_descricao_imagens">
+                        <h1>Canoa de Abobrinha Recheada</h1>
+                    </div>
+                </div>
+                <div class="div_produtos" onclick="window.location='Ecogastro_prato.php?id=4'" style="cursor: pointer;">
+                    <div class="div_imagem">
+                        <img src="Imagens/panqueca_talos.jpg" width="100%">
+                    </div>
+                    <div class="div_descricao_imagens">
+                        <h1>Panqueca de talos de espinafre com ricota</h1>
+                    </div>
+                </div>
+                <div class="div_produtos" onclick="window.location='Ecogastro_prato.php?id=2'" style="cursor: pointer;">
+                    <div class="div_imagem">
+                        <img src="Imagens/brigadeiro_banana.png" width="100%">
+                    </div>
+                    <div class="div_descricao_imagens">
+                        <h1>Brigadeiro de casca de banana</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Section para uma área feita para anúncios de terceiros-->
+    <section class="area_anuncio">
+        <a href="https://www.hellmanns.com.br/produtos/ketchup.html"><img src="Imagens/anuncio_hellmanns.png"></a>
+    </section>
+    <footer>
+        <!--Div onde está as informações gerais-->
+        <div id="div_footer_esq">
+            <ul>
+                <li>Receitas</li>
+                <li>Sobre Nós</li>
+                <li>Loja</li>
+                <li>Perfil</li>
+            </ul>
+        </div>
+        <!--Div onde está a logo-->
+        <div id="div_footer_meio">
+            <img src="Imagens/eg-logo.png">
+        </div>
+        <!--Div onde está as redes sociais-->
+        <div id="div_footer_dir">
+            <img src="Imagens/instagram.png">
+            <img src="Imagens/twitter.png">
+            <img src="Imagens/facebook.png">
+        </div>
+    </footer>
+    <div id="direitos_autorais">
+        <h3>© 2023 Todos os direitos reservados à Yan Ambrósio, Pedro Henrique, Luiz Gustavo.</h3>
+    </div>
+</body>
+
+</html>

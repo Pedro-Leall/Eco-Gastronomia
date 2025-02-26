@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    height: 100%;
+    background-color: rgb(146, 0, 0);
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(237, 234, 231);
+}
+
+/* caixa de login*/
+.caixa_login {
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    background: #faf7f7a6;
+}
+
+.form-input {
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+}
+
+/*formata o botão */
+.botao {
+    background: #8CA19A;;
+    border: 1px solid #ddd;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+
+}
+
+/*muda a cor quando passar o mouse em cima do botão */
+.botao:hover {
+    background: #2c6955;
+    ;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-footer {
+    text-align: center;
+}
+
+#icon_olho {
+    position: absolute;
+    top: 25%;
+    left: 90%;
+    cursor: pointer;
+}

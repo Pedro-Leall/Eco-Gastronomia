@@ -1,0 +1,247 @@
+/*Zera todas as medidas do body*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Zera as medidas do form*/
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Dá cor de fundo para o body*/
+body {
+    background-color: rgb(237, 234, 231);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Formata o cabeçalho*/
+header {
+    background-color: #8CA19A;
+    width: 100%;
+    height: 150px;
+
+}
+
+/*Formata a div responsável pela logo*/
+#div_logo {
+    height: 100%;
+    width: 20%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+/*Formata a logo*/
+#div_logo img {
+    width: 70%;
+    margin-left: 5%;
+}
+
+/*Formata a "div" responsável pelo menu de navegação*/
+nav {
+    width: 80%;
+    float: right;
+    height: 100%;
+    align-items: center;
+}
+
+/*Formata a ul do menu de navegação*/
+#ul_nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Formata os textos do menu de navegação*/
+#ul_nav li {
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+    list-style-type: none;
+    display: inline-block;
+    text-align: justify;
+    padding-top: 12px;
+
+}
+
+#div_pesquisa {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+#div_pesquisa input {
+    height: 28px;
+    border-radius: 3px;
+    margin-right: 1%;
+    width: 200px;
+
+}
+
+/*Coloca o símbolo do perfil*/
+.material-symbols-outlined {
+    color: white;
+    cursor: pointer;
+}
+
+/*Formata o icon do carrinho*/
+#icon_carrinho {
+    margin-left: 15px;
+    margin-top: 3px;
+}
+
+/*Formata o menu de navegação quando o mouse passar por cima*/
+#ul_nav li:hover {
+    text-decoration: underline;
+}
+
+/*Formata o rodapé*/
+footer {
+    margin-top: 200px;
+    height: 450px;
+
+    background-color: #4d504f;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Formata as div dentro do rodapé*/
+footer div {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Formata a div do meio no footer*/
+#div_footer_meio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Formata a logo no rodapé*/
+#div_footer_meio img {
+    width: 120px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+/*Formata as imagens das redes sociais no rodapé*/
+#div_footer_dir img {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+/*Formata a div que tá na direita no rodapé*/
+#div_footer_dir {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*Formata a div que tá na esquerda no rodapé*/
+#div_footer_esq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div_footer_esq li {
+    margin-top: 20px;
+    list-style-type: none;
+    color: white;
+}
+
+#direitos_autorais {
+    width: 100%;
+    text-align: center;
+    background-color: #4d504f;
+    color: #fff;
+}
+
+/*Info e main: para formatar toda a irformação da pag*/
+.info {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*apresenta: para formatar o texto de bem-vindo*/
+.apresenta {
+    color: black;
+    font-size: 2em;
+}
+
+/*para formatar o titulo*/
+.titulo {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.integrantes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*formatar as imagens dos integrantes */
+.integrantes img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transition: 1s ease;
+
+}
+
+/*para dar o efeito na img*/
+.integrantes img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+/*Formatar o local que fica fora do main/info, que seria o de informações dos integrantes*/
+.integrantes_2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 150px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    line-height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+}
+
+/*formatando o tamanho das classes text*/
+.text {
+    font-size: larger;
+}

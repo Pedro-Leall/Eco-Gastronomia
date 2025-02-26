@@ -1,0 +1,399 @@
+ /*Zera todas as medidas do body*/
+ * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     box-sizing: border-box;
+ }
+
+ /*Zera as medidas do form*/
+ form {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+
+ /*Dá cor de fundo para o body*/
+ body {
+     background-color: rgb(237, 234, 231);
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ /*Formata o cabeçalho*/
+ header {
+     background-color: #8CA19A;
+     width: 100%;
+     height: 150px;
+
+ }
+
+ /*Formata a div responsável pela logo*/
+ #div_logo {
+     height: 100%;
+     width: 20%;
+     float: left;
+     display: flex;
+     align-items: center;
+ }
+
+ /*Formata a logo*/
+ #div_logo img {
+     width: 70%;
+     margin-left: 5%;
+ }
+
+ /*Formata a "div" responsável pelo menu de navegação*/
+ nav {
+     width: 80%;
+     float: right;
+     height: 100%;
+     align-items: center;
+ }
+
+ /*Formata a ul do menu de navegação*/
+ #ul_nav {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     align-items: center;
+
+ }
+
+ /*Formata os textos do menu de navegação*/
+ #ul_nav li {
+     font-weight: bold;
+     color: white;
+     font-size: 1.4em;
+     list-style-type: none;
+     display: inline-block;
+     text-align: justify;
+     padding-top: 12px;
+
+ }
+
+ #div_pesquisa {
+     display: flex;
+     height: 100%;
+     align-items: center;
+
+ }
+
+ #div_pesquisa input {
+     height: 28px;
+     border-radius: 3px;
+     margin-right: 1%;
+     width: 200px;
+
+ }
+
+ /*Coloca o símbolo do perfil*/
+ .material-symbols-outlined {
+     color: white;
+     cursor: pointer;
+
+ }
+
+ /*Formata o icon do carrinho*/
+ #icon_carrinho {
+     margin-left: 15px;
+ }
+
+ /*Formata o menu de navegação quando o mouse passar por cima*/
+ #ul_nav li:hover {
+     text-decoration: underline;
+ }
+
+ .div_nav2 {
+     width: 100%;
+     height: 80px;
+     background-color: #c2cfcb;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .div_nav2 li {
+     list-style-type: none;
+     color: black;
+ }
+
+ .div_nav2 ul {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .div_nav2 li:hover {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+ .section_botao_comprar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+ }
+ #botao_comprar{
+    background: #8CA19A;
+    border: 1px solid #ddd;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+ }
+
+ #botao_comprar:hover{
+    background: #2c6955;
+ }
+ /*Formata o conteúdo do site*/
+ main {
+     width: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /*Formata o rodapé*/
+ footer {
+     margin-top: 200px;
+     height: 450px;
+     background-color: #4d504f;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ /*Formata as div dentro do rodapé*/
+ footer div {
+     width: 33.33%;
+     display: flex;
+     justify-content: center;
+ }
+
+ /*Formata a div do meio no footer*/
+ #div_footer_meio {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /*Formata a logo no rodapé*/
+ #div_footer_meio img {
+     width: 120px;
+     height: 100px;
+     margin-top: 30px;
+
+ }
+
+ /*Formata as imagens das redes sociais no rodapé*/
+ #div_footer_dir img {
+     width: 50px;
+     height: 50px;
+     margin-top: 30px;
+     margin-right: 100px;
+ }
+
+ /*Formata a div que tá na direita no rodapé*/
+ #div_footer_dir {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+ }
+
+ /*Formata a div que tá na esquerda no rodapé*/
+ #div_footer_esq {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ #div_footer_esq li {
+     margin-top: 20px;
+     list-style-type: none;
+     color: white;
+ }
+
+ #direitos_autorais {
+     width: 100%;
+     text-align: center;
+     background-color: #4d504f;
+     color: #fff;
+ }
+
+ .section_etapas {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .div_etapas {
+     width: 55%;
+     height: 80px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .etapa_carinho {
+     background-color: rgb(247, 247, 247);
+     width: 50%;
+     height: 80px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .etapa_carinho img,
+ .etapa_carinho2 img {
+     width: 20px;
+     height: 20px;
+     margin-right: 10px;
+ }
+
+ .etapa_carinho2 {
+     background-color: rgb(214, 214, 214);
+     width: 50%;
+     height: 80px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .etapa_carinho h4,
+ .etapa_carinho2 h4 {
+     font-weight: normal;
+ }
+
+ .section_escritas {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 15px;
+ }
+
+ .div_escritas {
+     width: 55%;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .div_texto_produtos {
+     width: 10%;
+ }
+
+ .div_escritas h5 {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: lighter;
+ }
+
+ .section_informacoes_produto {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+
+ }
+
+ /*Formata a div onde está a imagem do produto*/
+ .div_informacoes_produto {
+     width: 55%;
+     display: flex;
+ }
+
+ /*Formata a imagem do produto*/
+ .div_informacoes_produto img {
+     width: 61px;
+     height: 61px;
+     align-items: center;
+ }
+
+ /*Formata apenas a div onde está a imagem e a descrição do produto*/
+ .div_informacoes_produto2_1 {
+     width: 25%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+ }
+
+ /*Formata todas as divs onde está as informações*/
+ .div_valor_tot {
+     width: 25%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: end;
+ }
+
+ .div_quantidade {
+     width: 25%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding-right: 19px;
+ }
+
+ .div_valor_uni {
+     width: 25%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     padding-left: 85px;
+ }
+
+ /*Formata a div da descrição do texto*/
+ #div_descricao_produto {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     text-align: justify;
+ }
+
+ /*Formata a descrição do texto*/
+ #div_descricao_produto p {
+     margin-left: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: small;
+     margin-top: 7px;
+ }
+
+ /*Buttons para aumentar ou diminuir quantidade*/
+ .buttons_quantidade {
+     width: 40px;
+     height: 40px;
+     border: gray solid 1px;
+     font-size: 1.5em;
+     border-radius: 10px 0px 0px 10px;
+     cursor: pointer;
+ }
+
+ .button_adicionar {
+     border-radius: 0px 10px 10px 0px;
+ }
+
+ /*Formata o texto da quantidade*/
+ #div_texto_quantidade {
+     width: 40px;
+     height: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: gray solid 1px;
+
+ }
+
+ #valor {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: normal;
+ }
+
+ #icon_delete {
+     color: black;
+     margin-bottom: 3px;
+ }

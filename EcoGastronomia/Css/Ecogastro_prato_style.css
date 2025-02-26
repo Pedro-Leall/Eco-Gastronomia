@@ -1,0 +1,393 @@
+ /*Zera todas as medidas do body*/
+ * {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     box-sizing: border-box;
+ }
+
+ /*Zera as medidas do form*/
+ form {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+
+ /*Dá cor de fundo para o body*/
+ body {
+     background-color: rgb(237, 234, 231);
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ /*Formata o cabeçalho*/
+ header {
+     background-color: #8CA19A;
+     width: 100%;
+     height: 150px;
+
+ }
+
+ /*Formata a div responsável pela logo*/
+ #div_logo {
+     height: 100%;
+     width: 20%;
+     float: left;
+     display: flex;
+     align-items: center;
+ }
+
+ /*Formata a logo*/
+ #div_logo img {
+     width: 70%;
+     margin-left: 5%;
+ }
+
+ /*Formata a "div" responsável pelo menu de navegação*/
+ nav {
+     width: 80%;
+     float: right;
+     height: 100%;
+     align-items: center;
+ }
+
+ /*Formata a ul do menu de navegação*/
+ #ul_nav {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     align-items: center;
+
+ }
+
+ /*Formata os textos do menu de navegação*/
+ #ul_nav li {
+     font-weight: bold;
+     color: white;
+     font-size: 1.4em;
+     list-style-type: none;
+     display: inline-block;
+     text-align: justify;
+     padding-top: 12px;
+
+ }
+
+ #div_pesquisa {
+     display: flex;
+     height: 100%;
+     align-items: center;
+
+ }
+
+ #div_pesquisa input {
+     height: 28px;
+     border-radius: 3px;
+     margin-right: 1%;
+     width: 200px;
+
+ }
+
+ /*Coloca o símbolo do perfil*/
+ .material-symbols-outlined {
+     color: white;
+     cursor: pointer;
+
+ }
+
+ /*Formata o icon do carrinho*/
+ #icon_carrinho {
+     margin-left: 15px;
+ }
+
+ /*Formata o menu de navegação quando o mouse passar por cima*/
+ #ul_nav li:hover {
+     text-decoration: underline;
+ }
+
+ /*Formata o conteúdo do site*/
+ main {
+     width: 100%;
+     margin-top: 30px;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ /*Formata a descrição do prato*/
+ #descricao_prato {
+     display: flex;
+     justify-content: space-evenly;
+     font-family: Arial, Helvetica, sans-serif;
+     width: 40%;
+     border: gray 1px solid;
+     border-radius: 0px 10px 10px 0px;
+     padding: 10px;
+     align-items: center;
+ }
+
+ /*Formata a imagem do prato*/
+ #imagem_prato {
+     display: flex;
+     justify-content: space-evenly;
+     width: 60%;
+     border: gray 1px solid;
+ }
+
+ #imagem_prato img {
+     width: 100%;
+     height: 350px;
+ }
+
+ /*Foramta a div onde está a imagem e a descrição do prato*/
+ .div_imagem_descricao {
+     display: flex;
+     justify-content: space-evenly;
+     width: 55%;
+     margin-top: 50px;
+
+ }
+
+ .div_nav2 {
+     width: 100%;
+     height: 80px;
+     background-color: #c2cfcb;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .div_nav2 li {
+     list-style-type: none;
+     color: black;
+ }
+
+ .div_nav2 ul {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     text-align: center;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ .subtopicos {
+     text-decoration: none;
+     color: black;
+ }
+
+ .div_nav2 li:hover {
+     text-decoration: underline;
+     cursor: pointer;
+ }
+
+ /*Div onde vai estar o nome do prato*/
+ .nome_prato {
+     display: flex;
+     width: 55%;
+     justify-content: center;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.7em;
+ }
+
+ /*formata o botão */
+ .botao {
+     background: #8CA19A;
+     ;
+     border: 1px solid #ddd;
+     color: #ffffff;
+     padding: 10px;
+     width: 100%;
+     text-transform: uppercase;
+
+ }
+
+ /*muda a cor quando passar o mouse em cima do botão */
+ .botao:hover {
+     background: #2c6955;
+     ;
+ }
+
+ /*Section onde vai ter informações sobre o prato*/
+ .section_informacoes_ingredientes,
+ .section_informacoes_preparo,
+ .section_informacoes_quantidade {
+     width: 55%;
+     margin-top: 100px;
+     display: flex;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /*Formata a div onde esstá escrito  os ingredientes e o modo de preparo*/
+ .div_ingredientes,
+ .div_preparo {
+     width: 100%;
+ }
+
+ /*Formata os textos da div ingredientes*/
+ .div_ingredientes li,
+ .div_quantidade li {
+     margin-left: 20px;
+     color: #8CA19A;
+     font-size: large;
+     margin-top: 5px;
+ }
+
+ /*Formata os textos da div preparo*/
+ .div_preparo li {
+     list-style-type: decimal;
+     margin-left: 20px;
+     color: purple;
+     font-size: large;
+     margin-top: 5px;
+ }
+
+ /*Formata os textos da div preparo e ingredientes, para ele ficar preto e o list-style ficar de outra cor*/
+ .div_ingredientes li span,
+ .div_preparo li span,
+ .div_quantidade li span {
+     color: #000;
+ }
+
+ /*Formata o h1 da div ingredientes,preparo e quantidade*/
+ .div_ingredientes h1,
+ .div_preparo h1,
+ .div_quantidade h1 {
+     font-size: 2em;
+     text-decoration: underline #48504d;
+ }
+
+ /*Formata o rodapé*/
+ footer {
+     margin-top: 200px;
+     height: 450px;
+     background-color: #4d504f;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ /*Formata as div dentro do rodapé*/
+ footer div {
+     width: 33.33%;
+     display: flex;
+     justify-content: center;
+ }
+
+ /*Formata a div do meio no footer*/
+ #div_footer_meio {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /*Formata a logo no rodapé*/
+ #div_footer_meio img {
+     width: 120px;
+     height: 100px;
+     margin-top: 30px;
+
+ }
+
+ /*Formata as imagens das redes sociais no rodapé*/
+ #div_footer_dir img {
+     width: 50px;
+     height: 50px;
+     margin-top: 30px;
+     margin-right: 100px;
+ }
+
+ /*Formata a div que tá na direita no rodapé*/
+ #div_footer_dir {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+ }
+
+ /*Formata a div que tá na esquerda no rodapé*/
+ #div_footer_esq {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ #div_footer_esq li {
+     margin-top: 20px;
+     list-style-type: none;
+     color: white;
+ }
+
+ #direitos_autorais {
+     width: 100%;
+     text-align: center;
+     background-color: #4d504f;
+     color: #fff;
+ }
+
+ /*Formata o rodapé*/
+ footer {
+     margin-top: 200px;
+     height: 450px;
+     background-color: #4d504f;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ /*Formata as div dentro do rodapé*/
+ footer div {
+     width: 33.33%;
+     display: flex;
+     justify-content: center;
+ }
+
+ /*Formata a div do meio no footer*/
+ #div_footer_meio {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /*Formata a logo no rodapé*/
+ #div_footer_meio img {
+     width: 120px;
+     height: 100px;
+     margin-top: 30px;
+
+ }
+
+ /*Formata as imagens das redes sociais no rodapé*/
+ #div_footer_dir img {
+     width: 50px;
+     height: 50px;
+     margin-top: 30px;
+     margin-right: 100px;
+ }
+
+ /*Formata a div que tá na direita no rodapé*/
+ #div_footer_dir {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+ }
+
+ /*Formata a div que tá na esquerda no rodapé*/
+ #div_footer_esq {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ #div_footer_esq li {
+     margin-top: 20px;
+     list-style-type: none;
+     color: white;
+ }
+
+ #direitos_autorais {
+     width: 100%;
+     text-align: center;
+     background-color: #4d504f;
+     color: #fff;
+ }

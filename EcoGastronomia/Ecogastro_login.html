@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagens/eg-logo.png" type="image/x-icon" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Css/Ecogastro_login_style.css">
+    <title>EcoGastronomia - Login</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <form class="caixa_login" action="Ecogastro_login_back.php" method="POST">
+            <div class="form-header">
+                <h3> Login</h3>
+                <p>Login para acessar sua conta</p>
+            </div>
+            <!--Email Input-->
+            <div class="form-group">
+                <input type="text" name="login" class="form-input" placeholder="email" maxlength="45">
+            </div>
+            <!--Password Input-->
+            <div class="form-group">
+                <input type="password" name="senha" class="form-input" id="senha" placeholder="senha" maxlength="12">
+                <span class="material-symbols-outlined" id="icon_olho" onmouseover="verSenha()" onmouseout="esconderSenha()">
+                    visibility
+                </span>
+            </div>
+            <script>
+ 
+ 
+                // esconder a senha
+                function esconderSenha(){
+                    var senha = document.getElementById('senha')
+                    senha.type="password";
+                }
+         
+                // ver a senha
+                function verSenha(){
+                    var senha = document.getElementById('senha');
+                    senha.type="text";
+                }
+            </script>
+            <!--Login Button-->
+            <div class="form-group">
+                <button class="botao" type="submit">Login</button>
+            </div>
+            <div class="form-footer">
+                Não tem uma conta? <a href="cadastra_cliente.php">Cadastre-se</a>
+            </div>
+        </form>
+    </div><!--/.wrap-->
+</body>
+
+</html>

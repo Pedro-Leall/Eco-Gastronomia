@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Ecogastro_sobre_nos_style.css">
+    <link rel="icon" href="Imagens/eg-logo.png" type="image/x-icon" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="Click.js"></script>
+    <title>Ecogastronomia - Sobre Nós</title>
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+
+    <!--Cabeçalho-->
+    <header>
+        <!--Div para logo-->
+        <div id="div_logo">
+            <!--Logo-->
+            <a href="Ecogastro.html"><img src="Imagens/ecogastro.png"></a>
+        </div>
+        <nav>
+            <ul id="ul_nav">
+                <a href="Ecogastro_receitas.html">
+                    <li>Receitas</li>
+                </a>
+                <a href="Ecogastro_sobre_nos.html">
+                    <li>Sobre Nós</li>
+                </a>
+                <a href="Ecogastro_loja.html">
+                    <li>Loja</li>
+                </a>
+                <a href="Ecogastro_perfil.php">
+                    <li>Perfil</li>
+                </a>
+                <!--Div para o icon e a input-->
+                <div id="div_pesquisa">
+                    <form method="post" action="Ecogastro_resultado.php" id="form_pesquisa">
+                        <!--Input para pesquisar-->
+                        <input id="input_pesquisa" name="pesquisa">
+                    </form>
+                    <!--Coloca o ícone de pesquisa-->
+                    <span class="material-symbols-outlined" id="icon_pesquisa" onclick="pesquisar()">search</span>
+                   
+                    <script>
+                        function pesquisar() {
+                            form = document.getElementById("form_pesquisa");
+                            form.submit();
+                        }
+                    </script>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--Informações sobre nós-->
+    <main>
+        <!--div para formatar as informações dentro do main-->
+        <div class="info">
+            <div class="apresenta" style="margin-bottom: 100px;">
+                <h1>Bem vindo a Ecogastro</h1>
+            </div>
+
+
+
+            <div class="assunto">
+                <p class="text"> EcoGastro seu portal gastronômico de receitas ecológicas, onde a paixão pela culinária
+                    encontra o compromisso com o meio ambiente. Nosso site é o resultado da visão compartilhada por três
+                    amigos, Luiz Gustavo De Oliveira Santos, Pedro Henrique Leal Dos Santos Silva e Yan Ambrósio Gralha,
+                    que uniram forças para criar um espaço onde o sabor e a sustentabilidade se encontram.</p>
+                <br>
+                <br>
+                <h2 class="titulo">Nossa História:</h2>
+                <br>
+                <p class="text">A jornada do Ecogastro começou com uma conversa animada entre Luiz, Pedro e Yan. Cada um
+                    de nós trazia consigo a paixão pela culinária e um profundo respeito pela natureza. Sentíamos que
+                    era hora de transformar nossa paixão em ação e compartilhar com o mundo a nossa visão de um futuro
+                    mais sustentável.</p>
+                <br>
+                <br>
+                <p class="text">Nosso nome, "Ecogastro", reflete nossa filosofia. Acreditamos que a comida pode ser não apenas
+                    deliciosa, mas também uma força positiva para o meio ambiente. Inspirados por receitas tradicionais,
+                    como a sopa de pedra, que valorizam os ingredientes locais e minimizam o desperdício, começamos
+                    nossa jornada de criação e experimentação.</p>
+                <br>
+                <h2 class="titulo">Nosso Compromisso com o Meio Ambiente:</h2>
+                <br>
+                <p class="text">No Ecogastro, estamos comprometidos em trilhar o caminho da sustentabilidade em todas as
+                    nossas receitas e práticas. Trabalhamos constantemente para reduzir o desperdício de alimentos,
+                    escolhendo ingredientes locais e orgânicos sempre que possível, e promovendo métodos de preparo que
+                    minimizam o impacto ambiental.</p><br>
+                <br>
+                <p class="text">Acreditamos que, juntos, podemos fazer escolhas alimentares mais conscientes e
+                    deliciosas. Por meio de nosso site, compartilhamos receitas e dicas que não apenas satisfazem seu
+                    paladar, mas também nutrem o planeta que todos compartilhamos.</p><br>
+                <br>
+                <p class="text">O Ecogastro é mais do que apenas um site de receitas; é um convite para fazer parte de
+                    um movimento que coloca a sustentabilidade no centro da sua experiência culinária. Junte-se a nós
+                    nessa jornada gastronômica e ecológica, e vamos cozinhar um futuro mais verde, uma receita de cada
+                    vez.</p>
+                <br>
+                <p class="text">Obrigado por fazer parte da nossa história e por escolher o Ecogastro como seu destino
+                    culinário ecológico. Juntos, podemos fazer a diferença.</p>
+                <br>
+                <p class="text">Bom apetite, com consciência ecológica!</p>
+                <br>
+                <p class="text">Luiz Gustavo De Oliveira Santos, Pedro Henrique Leal Dos Santos Silva e Yan Ambrósio
+                    Gralha Fundadores do Ecogastro</p>
+                <br><br>
+                <h2>Nossos criadores:</h2>
+                <div class="Criadores">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--div para formatar a area dos integrantes/img-->
+    <div class="integrantes">
+        <a href="#Luiz"><img src="Imagens/Luiz.png" alt="Luiz"></a>.
+        <a href="#Pedro"><img src="Imagens/pedro.jpg" alt="Pedro"></a>
+        <a href="#Yan"><img src="Imagens/yan.png" alt="Yan"></a>
+
+    </div>
+    <!--div para formatar a area das infos dos integrantes-->
+    <div class="integrantes_2">
+        <!--div para realocar para este local, vindo da imagem do integrante em questão-->
+        <div id="Luiz">
+            <h2>Luiz Gustavo De Oliveira Santos:</h2><br><br>
+            <p> Luiz é o coração apaixonado por gastronomia do Ecogastro. Desde jovem, ele demonstrou uma habilidade
+                natural na cozinha, herdada de sua avó, que o introduziu aos segredos das receitas tradicionais. Sua
+                paixão pela culinária é profunda e contagiosa. Ele é o visionário por trás das deliciosas receitas e
+                pratos criativos que você encontra no nosso site.</p>
+            <br>
+            <p>Quando não está explorando novas combinações de sabores ou experimentando ingredientes sustentáveis, Luiz
+                Gustavo dedica seu tempo a pesquisar práticas culinárias ecológicas e compartilhá-las com nossa
+                comunidade. Sua energia e criatividade são essenciais para a missão do Ecogastro de tornar a gastronomia
+                uma força positiva para o meio ambiente.</p>
+        </div>
+        <br><br><br><br><br><br><br>
+        <!--div para realocar para este local, vindo da imagem do integrante em questão-->
+        <div id="Pedro">
+            <h2>Pedro Henrique Leal Dos Santos Silva:</h2><br><br>
+            <p>Pedro é o especialista em sustentabilidade do Ecogastro. Com formação em Ciências Ambientais, ele traz
+                seu profundo conhecimento sobre questões ambientais para nossa equipe. Pedro Henrique é o guardião da
+                nossa promessa de ser ecologicamente responsável em todas as etapas do processo culinário.</p>
+            <br>
+            <p>Sua paixão por ingredientes sazonais, práticas de agricultura sustentável e redução de resíduos o tornam
+                o principal defensor das escolhas conscientes no Ecogastro. Ele não apenas orienta nossas decisões, mas
+                também ajuda a moldar nosso compromisso contínuo com um estilo de vida ecológico.</p>
+        </div>
+        <br><br><br><br><br><br><br>
+        <!--div para realocar para este local, vindo da imagem do integrante em questão-->
+        <div id="Yan">
+            <h2>Yan Ambrósio Gralha</h2><br><br>
+            <p>Yan é o elo de ligação do Ecogastro com a comunidade. Com sua personalidade acolhedora e paixão por
+                compartilhar conhecimento, ele é o responsável por criar conexões entre o Ecogastro e todos os amantes
+                da gastronomia consciente.</p>
+            <br>
+            <p>Yan acredita que a educação é a chave para a mudança e se dedica a transmitir informações valiosas sobre
+                sustentabilidade ecológica na culinária. Além disso, ele é o curador das histórias inspiradoras e
+                depoimentos que compartilhamos em nosso site, mostrando como a comida pode unir as pessoas em torno de
+                valores comuns.</p>
+        </div>
+        <br><br>
+        <p>Juntos, Luiz Gustavo, Pedro Henrique e Yan formam uma equipe apaixonada e dedicada que impulsiona o Ecogastro
+            em direção a um futuro mais sustentável e saboroso. Cada um deles contribui com sua experiência única e
+            paixão, tornando o Ecogastro uma fonte confiável de receitas e informações para uma culinária ecológica.</p>
+    </div>
+
+    <footer>
+
+        <!--Div onde está as informações gerais-->
+
+        <div id="div_footer_esq">
+
+            <ul>
+
+                <li>Receitas</li>
+
+                <li>Sobre Nós</li>
+
+                <li>Loja</li>
+
+                <li>Perfil</li>
+
+            </ul>
+
+        </div>
+
+        <!--Div onde está a logo-->
+
+        <div id="div_footer_meio">
+
+            <img src="Imagens/eg-logo.png">
+        </div>
+
+        <!--Div onde está as redes sociais-->
+
+        <div id="div_footer_dir">
+
+            <img src="Imagens/instagram.png">
+
+            <img src="Imagens/twitter.png">
+
+            <img src="Imagens/facebook.png">
+
+        </div>
+
+    </footer>
+
+    <div id="direitos_autorais">
+        <h3>© 2023 Todos os direitos reservados à Yan Ambrósio, Pedro Henrique, Luiz Gustavo.</h3>
+    </div>
+
+
+</body>
+
+</html>
